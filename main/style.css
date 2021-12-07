@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{overflow: none;}
+
+nav,footer,header,aside{display: blok}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size:  100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+.header__logo{
+    width: 100%;
+    position: relative;
+    top: 18px;
+    left: 0;
+    z-index: 1;   
+}
+.header_element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+.logo_name{
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-style: Bold;
+    color: #000;
+}
+
+.menu{
+    color: #000;
+    font-family: 'Montserrat', light;
+}
+
+.menu_active{
+    color: #EE4390;
+    text-decoration: underline;
+    font-family: 'Montserrat', light;
+}
+
+.menu:hover{
+    color: #EE4390;
+    transition: .5s;
+}
+/* content */
+.content{
+    display: flex;
+}
+
+/* main */
+
+.main{
+    position: relative;
+    bottom: 51px;
+
+}
+.main_content{
+    margin-top: 17%;
+    width: 50%;
+    
+}
+
+.main_btn{
+    width: 280px;
+    height: 58px;
+    border-radius: 12px;
+    background-color: #EE4390;
+    color: #fff;
+    font-size: 33px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_btn:hover{
+    background-color: #fff;
+    color: #EE4390;
+
+    box-shadow: 1px 0px 12px #EE4390;
+
+    transition-duration: .5s;
+    
+}
+.btn{
+    display: inline-block;
+}
+.title{
+    padding-top: 34px;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    font-style: inherit;
+}
+
+.subtitle{
+    padding-top: 34px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro{
+    padding-top: 30px;
+}
+
+.skidka{
+    display: flex;
+    max-width: 530px;
+    height: 95px;
+    align-items: center;
+    border-radius: 18px;
+    justify-content: space-around;
+    background-color: #fff;
+
+    box-shadow: 0px 1px 8px ;
+}
+
+.price{
+    font-size: 36px;
+    
+}
+
+.price_2{
+    /* width: 225px; */
+    height: 77px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.pice_icon{
+    height: 50%;
+}
+
+.price_2 p{
+    font-size: 20px;
+}
+
+.price_btn{
+    width: 25%;
+    height: 77px;
+    border-radius: 10px;
+    background-color: #EE4390;
+    color: #fff;
+    font-size: 15px;
+    transition-duration: .2s;
+}
+
+.price_btn:hover{
+    color: #EE4390;
+    background-color: #fff;
+    box-shadow: 0px 1px 8px;
+
+    transition-duration: .5s;
+}
+
+.main_img img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image{
+    width: 81%;
+
+
+}
+
+hr{
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+
+}
+/* catalog */
+
+.catalog_text{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Montserrat';
+    margin: 0 0 50px 0;
+}
+
+.produkt_catalog{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.catalog_card{
+    width: 275px;
+    height: 515px;
+    border-radius: 10px;
+}    
+
+.card_item{
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.9;
+    font-size: 20px;
+    background-color:#fff;
+    box-shadow: 1px 2px 10px 0px;
+    border-radius: 10px;
+}
+
+.card_item:hover{
+    background-color: #fff;
+    box-shadow: 1px 2px 10px 0px #EE4390;
+    transition-duration: 1s;
+}
+
+.img_item{
+    max-width: 100%;
+}
+
+.text_item{
+    font-size: 30px;
+    color: #22256F;
+    font-weight: 700;
+    font-family: 'Montserrat', SemiBold;
+    line-height: 35px;
+    margin: 10px 0 0 0;
+}
+
+
+.subtext_item{
+    font-size: 20px;
+    color: #808080;
+    line-height: 35px;
+    margin: 10px 0 0 0;
+}
+
+.btn_bi{
+    
+    width: 55%;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #EE4390;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn_bi:hover{
+    color: #000;
+    box-shadow: 1px 0px 10px #EE4390;
+    border-radius: 10px;
+    transition-duration: .5s;
+
+}
+
+span{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+/* buy */
+
+.buy_sector{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.buy_flowers{
+    padding-bottom: 80px;
+}
+.buy-help{
+    display: flex;
+    padding: 58px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.help{
+    height: 283px;
+    display: flex;
+}
+
+.buy_img img{
+    max-width: 100%;
+}
+
+.buy_text{
+    max-width: 260px;
+    padding-left: 25px;
+    text-align: center;
+    align-self: center;
+    line-height: 45px;
+}
+
+.text{
+    font-weight: 900;
+    font-size: 24px;
+    color: #22256F;
+}
+
+.subtext2{
+    font-size: 30px;
+}
+
+.btn_buy{
+    width: 80%;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #EE4390;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.btn_buy:hover{
+    color: #000;
+    box-shadow: 1px 0px 10px #EE4390;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+
+/* footer */
+
+.footer_text{
+    
+    margin: 70px 0 0 0;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.footer_row{
+    display: flex;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+}
+
+.footer_col{
+    /* width: 315px; */
+    height: 160px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+/* garant */
+.garant{
+    width: 100%;
+    height: 125px;
+    background: rgba(0, 0, 0, 0.71);;
+}
+
+.garant_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text1{
+    margin: 55px 0 0 0;
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+   .container{
+       max-width: 970px;
+   }
+   .main_content{
+       margin-top: 15%;
+   }
+   .main_btn{
+       width: 100%;
+       font-size: 29px; 
+       padding: 0 10px;
+   }
+   .title{
+       font-size: 50px;
+       padding-top: 30px;
+   }    
+   .subtitle{
+       font-size: 20px;
+       padding-top: 30px;
+   }
+   .intro{
+       padding-top: 25px;
+   }
+   .image{
+       width: 80%;
+   }
+   .catalog_text{
+       font-size: 40px;
+   }
+   .catalog_card{
+       width: 225px;
+   }
+   .img-buket{
+       width: 100%;
+   }
+   .btn_bi{
+       width: 65%;
+   }
+   .buy_text{
+       line-height: 40px;
+   }
+   .footer_text{
+       margin-top: 50px;
+       font-size: 30px;
+   }
+   .footer_row{
+       margin-top: 40px;
+   }
+
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+    .menu_active{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .main_content{
+        width: 80%;
+        margin-top: 15%;
+
+    }
+    .main_btn{
+        width: 100%;
+        font-size: 18px; 
+        padding: 0 10px;
+    }
+    .title{
+        font-size: 40px;
+        padding-top: 30px;
+    }    
+    .subtitle{
+        font-size: 15px;
+        padding-top: 30px;
+    }
+    .intro{
+        padding-top: 25px;
+    }
+    .skidka{
+        height: 85px;
+    }
+    .price{
+        font-size: 25px;
+    }
+    .price_2{
+        height: 55px;
+    }
+    .price_btn{
+        height: 55px;
+    }
+    .image{
+        width: 100%;
+    }
+    .catalog_text{
+        font-size: 34px;
+    }
+    .catalog_card{
+        width: 225px;
+    }
+    .catalog_card:nth-child(3){
+        display: none;
+    }
+    .img-buket{
+        width: 100%;
+    }
+    .btn_bi{
+        width: 65%;
+    }
+    .buy_text{
+        line-height: 40px;
+    }
+    .footer_text{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .footer_row{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        max-width: none;
+    }
+    .content{
+        margin-bottom: 15px;
+    }
+    .menu_active{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .main_content{
+        width: 80%;
+        margin-top: 26%;
+
+    }
+    .main_btn{
+        width: 100%;
+        font-size: 20px; 
+        padding: 0 10px;
+    }
+    .title{
+        font-size: 35px;
+        padding-top: 30px;
+    }    
+    .subtitle{
+        font-size: 14px;
+        padding-top: 15px;
+    }
+    .intro{
+        padding-top: 25px;
+    }
+    .skidka{
+        height: 70px;
+    }
+    .price{
+        font-size: 18px;
+    }
+    .price_2{
+        height: 50px;
+    }
+    .price_2 p{
+        font-size: 13px;
+    }
+    .price_btn{
+        height: 50px;
+        font-size: 10px;
+    }
+    .main_img{
+        width: 100%;
+        position: relative;
+        top: 118px;
+    }
+    .image{
+        width: 100%;
+    }
+    .catalog_text{
+        font-size: 30px;
+    }
+    .produkt_catalog{
+        padding-bottom: 35px;
+    }
+    .catalog_card{
+        width: 225px;
+    }
+    .catalog_card:nth-child(3),
+    .catalog_card:nth-child(2){
+        display: none;
+    }
+    .img-buket{
+        width: 100%;
+    }
+    .text_item{
+        font-size: 25px;
+    }
+    .btn_bi{
+        width: 65%;
+        font-size: 13px;
+    }
+    span{
+        font-size: 25px;
+    }
+    .buy_text{
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .subtext2{
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .number_buy{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .btn_buy{
+        font-size: 10px;
+    }
+    .footer_text{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .footer_row{
+        margin-top: 40px;
+    }
+}
+
