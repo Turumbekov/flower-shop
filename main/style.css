@@ -250,13 +250,13 @@ hr{
     line-height: 1.9;
     font-size: 20px;
     background-color:#fff;
-    box-shadow: 1px 2px 10px 0px;
+    
     border-radius: 10px;
 }
 
 .card_item:hover{
     background-color: #fff;
-    box-shadow: 1px 2px 10px 0px #EE4390;
+    box-shadow: 1px 2px 10px 0px ;
     transition-duration: 1s;
 }
 
